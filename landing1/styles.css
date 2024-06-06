@@ -1,0 +1,260 @@
+body {
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff !important;
+}
+
+p {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 124px;
+    background-color: #000;
+    color: #fff;
+    padding: 0 79px;
+    margin-bottom: 33px;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 148px;
+}
+
+.header__logo-img {
+    height: 62px;
+    width: 62px;
+}
+
+.header__logo-title {
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.header__menu-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.header__menu-item {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.title {
+    width: 89%;
+    height: 602px;
+    margin-bottom: 118px;
+}
+
+.title__img {
+    background-image: linear-gradient(to right, black 20%, transparent 100%), url(assets/img1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    color: #fff;
+    padding: 152px 66px;
+}
+
+.title__text {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 76px;
+    max-width: 550px;
+    margin: 0;
+}
+
+.services {
+    width: 80%;
+    margin-bottom: 112px;
+}
+
+.services__header {
+    font-size: 50px;
+    line-height: 85px;
+    font-weight: bold;
+    margin: 0 0 25px;
+}
+
+.services__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.services__list-item {
+    width: 262px;
+    height: 432px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25px 20px;
+}
+
+#solar {
+    background-image: linear-gradient(to bottom, black 0%,
+            transparent 50%), url(assets/services1.jpg);
+}
+
+#cable {
+    background-image: linear-gradient(to bottom, black 0%,
+            transparent 50%), url(assets/services2.jpg);
+}
+
+#internet {
+    background-image: linear-gradient(to bottom, black 0%,
+            transparent 50%), url(assets/services3.jpg);
+}
+
+#phone {
+    background-image: linear-gradient(to bottom, black 0%,
+            transparent 50%), url(assets/services4.jpg);
+}
+
+.services__title {
+    font-size: 24px;
+    line-height: 31px;
+    font-weight: bold;
+    max-width: 150px;
+    margin: 0 0 11px;
+}
+
+.services__description {
+    font-family: "Roboto";
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 220px;
+}
+
+.advantages {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #F4F4F4;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 110px 150px;
+}
+
+.advantages__title {
+    padding: 40px 0;
+}
+
+.advantages__header {
+    font-size: 50px;
+    line-height: 67px;
+    font-weight: bold;
+    margin: 0 0 13px;
+    color: #131313;
+}
+
+.advantages__description {
+    font-family: "Roboto";
+    font-size: 18px;
+    line-height: 22px;
+    color: #3E3E3E;
+}
+
+.advantages__card {
+    border-radius: 10px;
+    background-color: #fff;
+    transition: background-color .3s;
+    padding: 50px 23px;
+}
+
+.advantages__card-number {
+    font-size: 58px;
+    font-weight: bold;
+    color: #ee0000;
+    margin: 0 0 15px;
+}
+
+.advantages__card-title {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: bold;
+    color: #5C5C5C;
+    margin: 0 0 9px;
+}
+
+.advantages__card-description {
+    font-family: "Roboto";
+    font-size: 18px;
+    line-height: 23px;
+    color: #787878;
+    margin: 0;
+    max-width: 300px;
+}
+
+.advantages__card:hover {
+    background-color: #ee0000;
+}
+
+.advantages__card:hover * {
+    color: #fff;
+}
+
+.about {
+    display: flex;
+    background-color: #ee0000;
+    box-sizing: border-box;
+    padding: 45px 150px 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.color-red {
+    color: #ee0000;
+}
