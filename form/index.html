@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма с графиком отправки</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,
+            300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <form class="form">
+            <p class="form__title">График отправки</p>
+            <div class="grid-container">
+
+                <div class="graph graph-type-default">
+                    <input class="graph__input" type="checkbox" id="sendNow" checked>
+                    <label class="graph__label" for="sendNow">Сразу</label>
+                </div>
+
+                <div class="card card-default">
+                    <div class="sources">
+                        <p class="sources__title">Источники и события</p>
+                        <button type="button" class="sources__button">+ Камеры и объекты</button>
+                        <p class="sources__selected">Выбрано &nbsp;<span class="sources__selectedInfo">0 источника/0
+                                события
+                            </span>
+                        </p>
+                    </div>
+                    <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <div for="checkbox" class="checkbox__body">
+                        </div>
+                        <p class="checkbox__title">Только подтверждённые
+                            нарушения</p>
+                    </label>
+                </div>
+
+                <div class="graph graph-type-custom">
+                    <input class="graph__input" type="checkbox" id="custom" checked>
+                    <label class="graph__label" for="custom">Настраиваемый</label>
+                </div>
+
+                <div class="card card-custom">
+                    <p class="card__title">График №1</p>
+                    <div class="sources">
+                        <p class="sources__title">Источники и события</p>
+                        <button type="button" class="sources__button">+ Камеры и объекты</button>
+                        <p class="sources__selected">Выбрано &nbsp;<span class="sources__selectedInfo">0 источника/0
+                                события
+                            </span>
+                        </p>
+                    </div>
+                    <div class="schedule">
+                        <p class="schedule__title">Расписание</p>
+                        <ul class="schedule__days">
+                            <li class="schedule__day">
+                                <input class="schedule__input" name="Monday" type="checkbox" id="mon">
+                                <label class="schedule__label" for="mon">Пн</label>
+                            </li>
+                            <li class="schedule__day">
+                                <input class="schedule__input" name="Tuesday" type="checkbox" id="tue">
+                                <label class="schedule__label" for="tue">Вт</label>
+                            </li>
+                            <li class="schedule__day">
+                                <input class="schedule__input" name="Wednesday" type="checkbox" id="wed">
+                                <label class="schedule__label" for="wed">Ср</label>
+                            </li>
+                            <li class="schedule__day">
+                                <input class="schedule__input" name="Thursday" type="checkbox" id="thu">
+                                <label class="schedule__label" for="thu">Чт</label>
+                            </li>
+                            <li class="schedule__day">
+                                <input class="schedule__input" name="Friday" type="checkbox" id="fri">
+                                <label class="schedule__label" for="fri">Пт</label>
+                            </li>
+                            <li class="schedule__day">
+                                <input class="schedule__input" name="Saturday" type="checkbox" id="sat">
+                                <label class="schedule__label" for="sat">Сб</label>
+                            </li>
+                            <li class="schedule__day">
+                                <input class="schedule__input" name="Sunday" type="checkbox" id="sun">
+                                <label class="schedule__label" for="sun">Вс</label>
+                            </li>
+                        </ul>
+                        <div class="time">
+                            <input class="time__input" type="time" name="time" id="time" value="00:00">
+                            <label class="time__title" for="time">Время</label>
+                        </div>
+                    </div>
+                    <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <div for="checkbox" class="checkbox__body">
+                        </div>
+                        <p class="checkbox__title">Только подтверждённые
+                            нарушения</p>
+                    </label>
+
+                </div>
+
+                <svg class="trash" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path
+                        d="M170.5 51.6L151.5 80h145l-19-28.4c-1.5-2.2-4-3.6-6.7-3.6H177.1c-2.7 0-5.2 1.3-6.7 3.6zm147-26.6L354.2 80H368h48 8c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8V432c0 44.2-35.8 80-80 80H112c-44.2 0-80-35.8-80-80V128H24c-13.3 0-24-10.7-24-24S10.7 80 24 80h8H80 93.8l36.7-55.1C140.9 9.4 158.4 0 177.1 0h93.7c18.7 0 36.2 9.4 46.6 24.9zM80 128V432c0 17.7 14.3 32 32 32H336c17.7 0 32-14.3 32-32V128H80zm80 64V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16zm80 0V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16zm80 0V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16z" />
+                </svg>
+
+                <button class="add">
+                    <svg class="add_calendar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                            d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z" />
+                    </svg>
+                    <p>Добавить график</p>
+                </button>
+
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
