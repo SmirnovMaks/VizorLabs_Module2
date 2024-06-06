@@ -1,0 +1,229 @@
+:root {
+    --lilac: #CFB6E1;
+    --blue: #86B4E8;
+    --green: #7FC28C;
+    --orange: #EF9F64;
+    --red: #DE6D6D;
+    --yellow: #FFDC7D;
+
+    --deep-lilac: #B88AD9;
+    --deep-blue: #649EE1;
+    --deep-green: #45A75A;
+    --deep-orange: #EE8D50;
+    --deep-red: #DE4E54;
+    --deep-yellow: #FED566;
+
+    --box-size: 15px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 530px;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.card__headerTitle {
+    font-size: 18px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.card__tabList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.card__tabItem {
+    display: flex;
+    cursor: pointer;
+    line-height: 22px;
+    opacity: .5;
+    font-size: 15px;
+    transition: opacity 0.1s ease 0s;
+}
+
+.card__tabItem:hover {
+    opacity: 1;
+}
+
+.card__tabItem--active {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    opacity: 1;
+}
+
+.card__tabButton {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.chart {
+    position: relative;
+    width: 230px;
+    height: 230px;
+    margin: 0 auto 20px;
+}
+
+.chart__donat {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(var(--lilac) 0% 32%,
+            var(--blue) 32% 62%,
+            var(--green) 62% 79%,
+            var(--orange) 79% 87%,
+            var(--red) 87% 91%,
+            var(--yellow) 91% 100%);
+    position: relative;
+}
+
+.chart__totalEvents {
+    position: absolute;
+    width: 72%;
+    height: 72%;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.chart__totalEventsText {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.legend {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.legend__item {
+    display: grid;
+    grid-template-columns: var(--box-size) 1fr max-content 30px;
+    gap: 15px;
+
+}
+
+.legend__item::before {
+    content: "";
+    width: var(--box-size);
+    height: var(--box-size);
+    border-radius: 20%;
+    border: 1px solid;
+}
+
+.legend__itemTitle {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.legend__itemEvents {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.legend__itemPercentage {
+    font-size: 13px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.isLilac.legend__item::before {
+    background-color: var(--lilac);
+    border-color: var(--deep-lilac);
+}
+
+.isLilac .legend__itemPercentage {
+    color: var(--deep-lilac);
+}
+
+.isBlue.legend__item::before {
+    background-color: var(--blue);
+    border-color: var(--deep-blue);
+}
+
+.isBlue .legend__itemPercentage {
+    color: var(--deep-blue);
+}
+
+.isGreen.legend__item::before {
+    background-color: var(--green);
+    border-color: var(--deep-green);
+}
+
+.isGreen .legend__itemPercentage {
+    color: var(--deep-green);
+}
+
+.isOrange.legend__item::before {
+    background-color: var(--orange);
+    border-color: var(--deep-orange);
+}
+
+.isOrange .legend__itemPercentage {
+    color: var(--deep-orange);
+}
+
+.isRed.legend__item::before {
+    background-color: var(--red);
+    border-color: var(--deep-red);
+}
+
+.isRed .legend__itemPercentage {
+    color: var(--deep-red);
+}
+
+.isYellow.legend__item::before {
+    background-color: var(--yellow);
+    border-color: var(--deep-yellow);
+}
+
+.isYellow .legend__itemPercentage {
+    color: var(--deep-yellow);
+}
