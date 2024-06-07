@@ -1,3 +1,7 @@
+:root {
+    --border-footer: 1px rgba(255, 255, 255, .2) solid;
+}
+
 body {
     margin: 0 auto;
     font-family: "Poppins", sans-serif;
@@ -8,7 +12,18 @@ a {
     color: #fff !important;
 }
 
-p {
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
     margin: 0;
 }
 
@@ -59,6 +74,7 @@ p {
 .main {
     width: 100%;
     display: flex;
+    gap: 10px;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
@@ -261,7 +277,8 @@ p {
 
 .about__btn button {
     border-radius: 40px;
-    height: 50px;
+    min-height: 50px;
+    height: max-content;
     font-size: 18px;
     line-height: 30px;
     border: none;
@@ -298,14 +315,152 @@ p {
     margin-top: 30px;
 }
 
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 95px 0;
+}
 
+.services__title {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: bold;
+    color: #ee0000;
+}
 
+.services__subtitle {
+    font-size: 50px;
+    line-height: 67px;
+    font-weight: bold;
+}
 
+.services__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
 
+.services__card_img {
+    grid-area: 1/2/3/3;
+    margin: auto;
+}
 
+.services__card {
+    width: 360px;
+    height: 252px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
 
+.services__card-title {
+    font-size: 24px;
+    line-height: 39px;
+    font-weight: bold;
+    color: #464646;
+}
 
+.services__card-description {
+    font-family: "Roboto";
+    font-size: 18px;
+    line-height: 25px;
+    color: #787878;
+}
 
+.footer {
+    background-color: #000;
+    color: #fff;
+    /* display: grid;
+    grid-template-columns: 1fr max-content max-content max-content;
+    gap: 20px; */
+}
+
+.footer__description {
+    font-family: "Roboto";
+    font-size: 18px;
+    line-height: 31px;
+    font-weight: lighter;
+    /* grid-column: 1/-1; */
+    border-bottom: var(--border-footer);
+    display: flex;
+    align-items: center;
+    padding: 45px 150px;
+}
+
+.footer__body {
+    display: flex;
+    padding: 0 150px;
+    margin: 25px 0;
+}
+
+.footer__logo {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 50px 0 0;
+}
+
+.footer__logo-description {
+    font-family: "Roboto";
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: lighter;
+    max-width: 340px;
+}
+
+.footer__title {
+    font-family: "Roboto";
+    font-size: 16px;
+    line-height: 35px;
+    margin-bottom: 10px;
+}
+
+.footer__links {
+    border-left: var(--border-footer);
+    padding: 100px 50px;
+}
+
+.footer__link {
+    font-family: "Roboto";
+    font-size: 16px;
+    line-height: 35px;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+.phone,
+.email {
+    font-family: "Roboto";
+    font-size: 16px;
+    line-height: 18.75px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.social-net {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* grid-column: 1/-1; */
+    font-size: 16px;
+    line-height: 24px;
+    padding: 20px;
+    border-top: var(--border-footer);
+}
 
 
 
