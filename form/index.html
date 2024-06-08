@@ -15,15 +15,15 @@
 <body>
     <div class="container">
         <form class="form">
-            <p class="form__title">График отправки</p>
+            <h1 class="form__title">График отправки</h1>
             <div class="grid-container">
 
-                <div class="graph graph-type-default">
-                    <input class="graph__input" type="checkbox" id="sendNow" checked>
-                    <label class="graph__label" for="sendNow">Сразу</label>
+                <div class="defaultCheckbox">
+                    <input class="defaultCheckbox__input" type="checkbox" id="sendNow" checked>
+                    <label class="defaultCheckbox__label" for="sendNow">Сразу</label>
                 </div>
 
-                <div class="card card-default">
+                <div class="card">
                     <div class="sources">
                         <p class="sources__title">Источники и события</p>
                         <button type="button" class="sources__button">+ Камеры и объекты</button>
@@ -32,21 +32,21 @@
                             </span>
                         </p>
                     </div>
-                    <label class="checkbox">
-                        <input type="checkbox" class="checkbox__input">
-                        <div for="checkbox" class="checkbox__body">
-                        </div>
-                        <p class="checkbox__title">Только подтверждённые
-                            нарушения</p>
+                    <label class="customCheckbox">
+                        <input type="checkbox" class="customCheckbox__input">
+                        <span class="customCheckbox__body">
+                        </span>
+                        <span class="customCheckbox__title">Только подтверждённые
+                            нарушения</span>
                     </label>
                 </div>
 
-                <div class="graph graph-type-custom">
-                    <input class="graph__input" type="checkbox" id="custom" checked>
-                    <label class="graph__label" for="custom">Настраиваемый</label>
+                <div class="defaultCheckbox">
+                    <input class="defaultCheckbox__input" type="checkbox" id="custom" checked>
+                    <label class="defaultCheckbox__label" for="custom">Настраиваемый</label>
                 </div>
 
-                <div class="card card-custom">
+                <div class="card">
                     <p class="card__title">График №1</p>
                     <div class="sources">
                         <p class="sources__title">Источники и события</p>
@@ -93,12 +93,12 @@
                             <label class="time__title" for="time">Время</label>
                         </div>
                     </div>
-                    <label class="checkbox">
-                        <input type="checkbox" class="checkbox__input">
-                        <div for="checkbox" class="checkbox__body">
-                        </div>
-                        <p class="checkbox__title">Только подтверждённые
-                            нарушения</p>
+                    <label class="customCheckbox">
+                        <input type="checkbox" class="customCheckbox__input">
+                        <span class="customCheckbox__body">
+                        </span>
+                        <span class="customCheckbox__title">Только подтверждённые
+                            нарушения</span>
                     </label>
 
                 </div>
@@ -110,12 +110,12 @@
                     </svg>
                 </button>
 
-                <button class="add">
-                    <svg class="add_calendar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <button class="add-button">
+                    <svg class="add-button__calendar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                         <path
                             d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z" />
                     </svg>
-                    <p>Добавить график</p>
+                    Добавить график
                 </button>
 
             </div>
