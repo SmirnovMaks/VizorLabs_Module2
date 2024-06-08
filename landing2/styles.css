@@ -1,5 +1,74 @@
-.lol {
-    background-image: url(./assets/designer_1.png);
-    width: 1000px;
-    height: 1000px;
+:root {
+    --color-text: #505F98;
+    --color-title: #091133;
+    --color-button: #111B47;
+}
+
+body {
+    font-family: "Roboto";
+    font-size: 16px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+button {
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    padding: 12px 160px;
+    justify-content: space-between;
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+}
+
+.header__menu-list {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.header__menu-item {
+    display: flex;
+    align-items: center;
+    line-height: 24px;
+    color: var(--color-text);
+}
+
+.logo__title {
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    line-height: 38px;
+    font-weight: 900;
+}
+
+.btn {
+    border: none;
+    background-color: var(--color-button);
+    color: #fff;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+    border-radius: 2px;
 }
