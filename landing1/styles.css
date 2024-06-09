@@ -56,7 +56,7 @@ ul {
     font-size: 26px;
 }
 
-.header__menu-list {
+.header__menuList {
     list-style: none;
     display: flex;
     align-items: center;
@@ -65,7 +65,7 @@ ul {
     margin: 0;
 }
 
-.header__menu-item {
+.header__menuItem {
     font-size: 18px;
     font-weight: 500;
     line-height: 27px;
@@ -104,6 +104,10 @@ ul {
     margin: 0;
 }
 
+.title__text--red {
+    color: #ee0000;
+}
+
 .expertise {
     width: 80%;
     margin-bottom: 112px;
@@ -125,7 +129,7 @@ ul {
     gap: 30px;
 }
 
-.expertise__list-item {
+.expertise__listItem {
     width: 262px;
     height: 432px;
     box-sizing: border-box;
@@ -207,14 +211,14 @@ ul {
     padding: 50px 23px;
 }
 
-.advantages__card-number {
+.advantages__cardNumber {
     font-size: 58px;
     font-weight: bold;
     color: #ee0000;
     margin: 0 0 15px;
 }
 
-.advantages__card-title {
+.advantages__cardTitle {
     font-size: 24px;
     line-height: 29px;
     font-weight: bold;
@@ -222,7 +226,7 @@ ul {
     margin: 0 0 9px;
 }
 
-.advantages__card-description {
+.advantages__cardDescription {
     font-family: "Roboto";
     font-size: 18px;
     line-height: 23px;
@@ -286,12 +290,12 @@ ul {
     padding: 10px 30px;
 }
 
-.about__btn-more {
+.about__btnMore {
     background-color: #fff;
     color: #000;
 }
 
-.about__btn-contact {
+.about__btnContact {
     background-color: #000;
     font-weight: 500;
     color: #fff;
@@ -303,12 +307,12 @@ ul {
     align-items: center;
 }
 
-.about__photo-right {
+.about__photoLeft {
     width: 292px;
     height: 457px;
 }
 
-.about__photo-right {
+.about__photoRight {
     width: 323px;
     height: 330px;
     transform: translateX(-125px);
@@ -342,7 +346,7 @@ ul {
     gap: 30px;
 }
 
-.services__card_img {
+.services__card--img {
     grid-area: 1/2/3/3;
     margin: auto;
 }
@@ -359,14 +363,14 @@ ul {
     box-sizing: border-box;
 }
 
-.services__card-title {
+.services__cardTitle {
     font-size: 24px;
     line-height: 39px;
     font-weight: bold;
     color: #464646;
 }
 
-.services__card-description {
+.services__cardDescription {
     font-family: "Roboto";
     font-size: 18px;
     line-height: 25px;
@@ -406,7 +410,7 @@ ul {
     padding: 50px 50px 0 0;
 }
 
-.footer__logo-description {
+.footer__logoDescription {
     font-family: "Roboto";
     font-size: 16px;
     line-height: 27px;
@@ -444,7 +448,7 @@ ul {
     cursor: pointer;
 }
 
-.social-net {
+.socialNet {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -460,24 +464,4 @@ ul {
     line-height: 24px;
     padding: 20px;
     border-top: var(--border-footer);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.color-red {
-    color: #ee0000;
 }
